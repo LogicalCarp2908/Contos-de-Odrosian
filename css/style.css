@@ -1,0 +1,228 @@
+* {
+	font-family: "Cinzel", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+h1
+{
+	font-size: 40px;
+	text-align: center;
+}
+
+h2
+{
+	font-size: 24px;
+	text-align: center;
+}
+
+h3
+{
+	font-size: 18px;
+	text-align: justify;
+}
+
+img, video {
+	border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+p {
+	font-family: 'Noto Serif';
+}
+
+.container {
+	max-width: 800px;
+	width: 100%;
+	margin: 20px auto;
+}
+
+#content {
+	background-color: rgb(31 55 31);
+	color: rgb(255 250 175);
+	width: 100%;
+	padding: 5px 25px;
+	font-size: 15px;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 11px #fdff7e;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	box-sizing: border-box;
+}
+
+a.classe1:link, a.classe1:visited, a.classe1:active 
+{
+	text-decoration: underline;
+	color: #004811;
+}
+
+a.classe1:hover 
+{
+	text-decoration: underline overline;
+	color: #ffd300;
+}
+
+.button {
+	border: none;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 17px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color: #004811;
+	color: #fffdac;
+	box-shadow: 0 0 10px #ffe462;
+	font-weight: bold;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.modalVisual {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.modalConteudo {
+	margin: auto;
+	display: block;
+	width: 100%;
+	max-width: 800px;
+}
+
+#txtImg {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+.fechar {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#editor {
+	background-color: white;
+	color: black;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 11px #eddbc8;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#editor label {
+	display: block;
+	font-weight: bold;
+	margin-top:10px;
+}
+
+#editor input[type="text"],
+#editor textarea,
+#editor select {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 6px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-family: 'Noto Serif';
+	margin-top: 4px;
+}
+
+.choice-row {
+	display: flex;
+	gap: 8px;
+	margin: 6px 0;
+	align-items: center;
+}
+
+.choice-row input {
+	flex: 1;
+}
+
+@media (max-width: 480px) {
+	img, video {
+		border-radius: 0px;
+	}
+	#content {
+		border-radius: 0px;
+	}
+	.container {
+		margin: 0;
+	}
+}
+.audio-box {
+	position: fixed;
+	left: 10px;
+	bottom: 20px;
+	z-index: 10;
+	padding: 6px 10px 8px 10px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	max-width: 280px;
+	opacity: 0.9;
+}
+
+#audiodescBox { bottom: 110px; }
+#bgmBox { bottom: 10px; }
+
+.audio-label {
+	color: #fdff7e;
+	font-size: 16px;
+	font-family: "Noto Serif", serif;
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	padding-left: 2px;
+	user-select: none;
+}
+
+.audio-box audio {
+	width: 260px;
+	height: 32px;
+	outline: none;
+}
+
+.audio-box .vol-slider {
+	width: 100%;
+	cursor: pointer;
+	accent-color: green;
+}

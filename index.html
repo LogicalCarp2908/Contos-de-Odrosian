@@ -1,0 +1,36 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contos de Odrosian</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto Serif" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/centabel" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jim+Nightshade&display=swap" rel="stylesheet">
+	<link rel = "stylesheet" href = "css/style.css">
+	<script src = "js/main.js"></script>
+	<script src="js/sweetalert_min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="cabecalho">
+			<center>
+				<img id="headerImg" src="img/image-eric.gif" width="100%">
+				<video id="headerVideo" width="100%" muted loop playsinline style="display:none;"></video>
+			</center>
+			<center><button id="btnEditor" class="button" style="font-size:14px; padding:8px 16px;">⚙ Editor de páginas</button></center>
+		</div>
+		<div id="content"></div>
+		<div id="editor" style="display:none;"></div>
+	</div>
+	<div id="audiodescBox" class="audio-box" style="display:none;">
+	<span class="audio-label"> Audiodescrição</span>
+	<audio id="audiodesc" controls></audio>
+	<input type="range" class="vol-slider" min="0" max="1" step="0.01" value="1" data-target="audiodesc">
+</div>
+<div id="bgmBox" class="audio-box">
+	<span class="audio-label"> Música</span>
+	<audio id="bgm" loop></audio>
+	<input type="range" class="vol-slider" min="0" max="1" step="0.01" value="0.6" data-target="bgm">
+</div>
+</body> 
+</html>
